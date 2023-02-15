@@ -1,3 +1,8 @@
+---
+title: Resoruces
+categories: Resources
+---
+
 # Resources
 ## Arch
 ## Low Level (Hardware, firemware, microcontrollers)
