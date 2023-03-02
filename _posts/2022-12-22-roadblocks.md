@@ -1,6 +1,7 @@
 ---
 title: Roadblocks
 ---
+
 # Issue #1
 ---
 ## Issues
@@ -18,3 +19,15 @@ title: Roadblocks
 - [Refrence Video](https://youtu.be/rhvRs84rN9I)
 
 ---
+# Issue #2
+---
+## Issues
+- Everytime a new torrent started to download, it would fail
+
+## Cause
+- Not entirely sure, suspect it was an issue with the SMB and NFS permission continutiy
+
+## Solution
+- Stripped ACL
+- Deleted both NFS and SMB shares and reinitiated them using only NFS permissions
+- Works for now, we'll see if there are any issues in the future
