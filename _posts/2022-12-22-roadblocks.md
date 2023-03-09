@@ -36,12 +36,30 @@ title: Roadblocks
 # Issue #3
 ---
 ## Problem
+### 3/3/2023
 - Warning backing up docker-volumes with duplicati
  ```2023-03-03 09:00:05 +00 - [Warning-Duplicati.Library.Main.Operation.Backup.FileBlockProcessor.FileEntry-PathProcessingFailed]: Failed to process path: /source/logging_prometheus-data/_data/data/chunks_head/000814```
+- Re-ran backup
+- Not entirely sure if this issue was a fluke or if its a persisting issue and if this is just a temporary fix
+- Come back to later
+### 3/4/2023
+- Warning still persists
+    - Try adding sudo permissions to container
+
+## Cause
+- Not entirely sure what the cause was, possibly just a fluke
+## Solution
+- Re running the backup seemed to fix the issue, need to keep an eye on it the next few weeks to make sure it keeps running smoothly
+
+---
+# Issue #4
+---
+## Problem
+- Radarr and Sonarr not searching for files, maybe not connecting to prowlarr properly?
+
+## Steps to fix
+- Updated sonarr, radarr, and prowlarr
 
 ## Cause
 
 ## Solution
-- Re-ran backup
-- Not entirely sure if this issue was a fluke or if its a persisting issue and if this is just a temporary fix
-- Come back to later
