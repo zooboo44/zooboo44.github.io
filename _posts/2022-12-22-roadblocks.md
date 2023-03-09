@@ -63,3 +63,13 @@ title: Roadblocks
 ## Cause
 
 ## Solution
+
+---
+## Issue #5
+---
+## Problem
+- Accidentally deleted VM that had docker running ._.
+
+## Solution
+- Run kubernetes with multiple master and slave nodes on proxmox to create HA
+- Eventually have a few slave nodes on other systems or even off premises
