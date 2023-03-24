@@ -73,3 +73,8 @@ title: Roadblocks
 ## Solution
 - Run kubernetes with multiple master and slave nodes on proxmox to create HA
 - Eventually have a few slave nodes on other systems or even off premises
+
+---
+## Issue #6
+---
+- [Arch system hangs on shutdown](https://github.com/zooboo44/boilerplates/tree/master/arch/hyprland)
