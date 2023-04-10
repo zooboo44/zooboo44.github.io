@@ -24,4 +24,6 @@ categories: Programming
 # Roadblocks
 
 # Resources
-- 
+- Sockets
+    - [Creating a TCP Server in C++ [Linux / Code Blocks]](https://youtu.be/cNdlrbZSkyQ)
+    - [Unix Socket](https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm)
