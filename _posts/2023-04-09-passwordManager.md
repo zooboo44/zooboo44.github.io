@@ -27,5 +27,6 @@ categories: Programming
 - Sockets
     - [Creating a TCP Server in C++ [Linux / Code Blocks]](https://youtu.be/cNdlrbZSkyQ)
     - [Unix Socket](https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm)
+    - [Sockets tutorial](https://www.linuxhowtos.org/C_C++/socket.htm)
 - MySQL Database
     - [Connect to database](https://dev.mysql.com/doc/connector-cpp/1.1/en/connector-cpp-examples-complete-example-1.html)
