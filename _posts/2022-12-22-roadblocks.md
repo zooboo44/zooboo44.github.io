@@ -77,4 +77,4 @@ title: Roadblocks
 ---
 ## Issue #6
 ---
-- [Arch system hangs on shutdown](https://github.com/zooboo44/dotfiles/tree/master/arch/hyprland)
+- [Arch system hangs on shutdown](https://github.com/zooboo44/dotfiles/tree/master/hypr)
