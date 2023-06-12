@@ -11,6 +11,7 @@ categories: Programming
     - Encrypted secrets
     - Portable
     - Docker Image
+    - Organizations/Team sharing
 - Goal
     - Create a password manager from scratch in C++ to learn how to use sockets
     - Connect to a database
@@ -31,3 +32,5 @@ categories: Programming
     - [Group chat application](https://youtu.be/KEiur5aZnIM)
 - MySQL Database
     - [Connect to database](https://dev.mysql.com/doc/connector-cpp/1.1/en/connector-cpp-examples-complete-example-1.html)
+- User Accounts
+    - [General User Account structure](https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/)
