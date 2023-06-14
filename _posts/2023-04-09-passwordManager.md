@@ -12,6 +12,8 @@ categories: Programming
     - Portable
     - Docker Image
     - Organizations/Team sharing
+    - Multithread to handle socket connections
+    - SSL
 - Goal
     - Create a password manager from scratch in C++ to learn how to use sockets
     - Connect to a database
@@ -20,7 +22,16 @@ categories: Programming
     - Encrypt/decrypt user input
 
 # Timeline
-- Connect to MySQL database
+- [ ] Create a client and server programs that can communicate with each other
+- [ ] Multithread server connections
+- [ ] Connect the server to a database
+- [ ] Structure how the database is going to be setup to hold the usernames and passwords
+- [ ] Be able to retrieve the usernames and passwords
+- [ ] Encrypt passwords that are stored in the database
+
+# Progress/What I've learned
+- Learned about sockets and how servers and clients connect to each other
+
 
 # Roadblocks
 
