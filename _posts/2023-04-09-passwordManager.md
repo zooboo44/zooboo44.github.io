@@ -14,6 +14,7 @@ categories: Programming
     - Organizations/Team sharing
     - Multithread to handle socket connections
     - SSL
+    - logging (client IPs, actions, false attempts, etc.)
 - Goal
     - Create a password manager from scratch in C++ to learn how to use sockets
     - Connect to a database
@@ -23,6 +24,7 @@ categories: Programming
 
 # Timeline
 - [ ] Create a client and server programs that can communicate with each other
+- [ ] Parse json data to setup environment on start
 - [ ] Multithread server connections
 - [ ] Connect the server to a database
 - [ ] Structure how the database is going to be setup to hold the usernames and passwords
