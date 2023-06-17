@@ -33,6 +33,7 @@ categories: Programming
 
 # Progress/What I've learned
 - Learned about sockets and how servers and clients connect to each other
+- How to include and link external libraries
 
 
 # Roadblocks
@@ -45,5 +46,6 @@ categories: Programming
     - [Group chat application](https://youtu.be/KEiur5aZnIM)
 - MySQL Database
     - [Connect to database](https://dev.mysql.com/doc/connector-cpp/1.1/en/connector-cpp-examples-complete-example-1.html)
+    - [Connect to database video](https://youtu.be/cSZvq7Kv6_0)
 - User Accounts
     - [General User Account structure](https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/)
