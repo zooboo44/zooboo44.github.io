@@ -1,5 +1,5 @@
 ---
-title: Bitwarden
+title: Corne
 categories: Self-host
 ---
 
