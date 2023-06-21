@@ -31,6 +31,24 @@ categories: Programming
 - [ ] Be able to retrieve the usernames and passwords
 - [ ] Encrypt passwords that are stored in the database
 
+# MySQL
+### MySQL Server Installation
+- [Install MySQL Server with apt](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install)
+    ```
+    sudo dpkg -i /PATH/version-specific-package-name.deb
+    sudo apt-get install mysql-server
+    ```
+- Start Service
+    ```
+    $> systemctl [start | stop | status] mysql
+    ```
+### Postinstallation Setup and Testing
+- Configure the sql server (change root password, remove test user, allow/disallow remote login by root user)
+    ```
+    mysql_secure_installation
+    ```
+- If this ```Failed! Error: SET PASSWORD has no significance for user 'root'@'localhost' ...``` error occurs when trying to set the root password [follow these steps](https://www.nixcraft.com/t/mysql-failed-error-set-password-has-no-significance-for-user-root-localhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server-please-consider-using-alter-user/4233)
+
 # Progress/What I've learned
 - Learned about sockets and how servers and clients connect to each other
 - How to include and link external libraries
