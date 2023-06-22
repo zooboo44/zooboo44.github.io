@@ -20,7 +20,7 @@ categories: Self-host
 # Parts
 - [ ] [PCB](https://www.diykeyboards.com)
     - Purchasing PCB from a seller, purchasing through PCBWay or jlcpcb is too expensive due to shipping costs and minimum board ammount
-- [X] [OLED Display]()https://www.amazon.com/gp/product/B079BN2J8V/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1
+- [X] [OLED Display](https://www.amazon.com/gp/product/B079BN2J8V/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1)
 - [X] 2x [nice!nano](https://typeractive.xyz/products/nice-nano)
 - [X] [SMD Diodes](https://www.amazon.com/gp/product/B09TKVYJL6/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
 - [X] [Kailh hotswap sockets for MX](https://www.amazon.com/gp/product/B0BVH6M5FP/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
