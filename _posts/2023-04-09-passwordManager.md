@@ -64,15 +64,18 @@ Ubuntu
 sudo apt install libpq-dev
 ```
 
+
 - Download ```libpqxx``` library
 ```
 wget https://github.com/jtv/libpqxx/archive/refs/tags/7.7.5.tar.gz
 ```
 
+
 - Extract
 ```
 tar xvfz libpqxx-4.0.tar.gz
 ```
+
 - Configure
 ```
 cd libpqxx-4.0
