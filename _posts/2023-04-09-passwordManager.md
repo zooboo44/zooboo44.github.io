@@ -39,11 +39,12 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 sudo apt update\
 sudo apt-get install postgresql
 ```
+
 ## PgAdmin Web Installation
 ```
 sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'\
 sudo apt install pgadmin4-web\
-//Create initial PgAdmin account
+#Create initial PgAdmin account
 sudo /usr/pgadmin4/bin/setup-web.sh\
 ```
 - Log into PgAdmin ```127.0.0.1\pgadmin4```
@@ -54,17 +55,20 @@ sudo /usr/pgadmin4/bin/setup-web.sh\
 
 ## Connector
 - Download ```libpq``` library
+
 ```
-# Arch
+Arch
 yay -S postgresql-libs
 
-# Ubuntu
+Ubuntu
 sudo apt install libpq-dev
 ```
+
 - Download ```libpqxx``` library
 ```
 wget https://github.com/jtv/libpqxx/archive/refs/tags/7.7.5.tar.gz
 ```
+
 - Extract
 ```
 tar xvfz libpqxx-4.0.tar.gz
@@ -89,6 +93,6 @@ cd libpqxx-4.0
     - [Group chat application](https://youtu.be/KEiur5aZnIM)
 
 - PostgreSQL
-    - 
+    - [Install and configure Libpqxx](https://github.com/jtv/libpqxx/blob/master/BUILDING-configure.md)
 - User Accounts
     - [General User Account structure](https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/)
