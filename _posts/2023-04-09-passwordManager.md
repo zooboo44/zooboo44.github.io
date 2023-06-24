@@ -31,27 +31,52 @@ categories: Programming
 - [ ] Be able to retrieve the usernames and passwords
 - [ ] Encrypt passwords that are stored in the database
 
-# MySQL
-### MySQL Server Installation
-- [Install MySQL Server with apt](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install)
-    ```
-    sudo dpkg -i /PATH/version-specific-package-name.deb
-    sudo apt-get install mysql-server
-    ```
-- Start Service
-    ```
-    $> systemctl [start | stop | status] mysql
-    ```
-### Postinstallation Setup and Testing
-- Configure the sql server (change root password, remove test user, allow/disallow remote login by root user)
-    ```
-    mysql_secure_installation
-    ```
-- If this ```Failed! Error: SET PASSWORD has no significance for user 'root'@'localhost' ...``` error occurs when trying to set the root password [follow these steps](https://www.nixcraft.com/t/mysql-failed-error-set-password-has-no-significance-for-user-root-localhost-as-the-authentication-method-used-doesnt-store-authentication-data-in-the-mysql-server-please-consider-using-alter-user/4233)
+# PostgreSQL
+## Server Installation
+```
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'\
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -\
+sudo apt update\
+sudo apt-get install postgresql
+```
+## PgAdmin Web Installation
+```
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'\
+sudo apt install pgadmin4-web\
+//Create initial PgAdmin account
+sudo /usr/pgadmin4/bin/setup-web.sh\
+```
+- Log into PgAdmin ```127.0.0.1\pgadmin4```
+- Open PgAdmin in your browser, create an account, and login.
+- Then right-click 'Servers' (top left of GUI, under 'Browser').
+    - Under 'General', give your server a name (I used postgresql-local).
+    - Under 'Connection', supply a host (127.0.0.1), port (5432), and username (postgres)
+
+## Connector
+- Download ```libpq``` library
+```
+# Arch
+yay -S postgresql-libs
+
+# Ubuntu
+sudo apt install libpq-dev
+```
+- Download ```libpqxx``` library
+```
+wget https://github.com/jtv/libpqxx/archive/refs/tags/7.7.5.tar.gz
+```
+- Extract
+```
+tar xvfz libpqxx-4.0.tar.gz
+```
+- Configure
+```
+cd libpqxx-4.0
+./configure
+```
 
 # Progress/What I've learned
 - Learned about sockets and how servers and clients connect to each other
-- How to include and link external libraries
 
 
 # Roadblocks
@@ -62,8 +87,8 @@ categories: Programming
     - [Unix Socket](https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm)
     - [Sockets tutorial](https://www.linuxhowtos.org/C_C++/socket.htm)
     - [Group chat application](https://youtu.be/KEiur5aZnIM)
-- MySQL Database
-    - [Connect to database](https://dev.mysql.com/doc/connector-cpp/1.1/en/connector-cpp-examples-complete-example-1.html)
-    - [Connect to database video](https://youtu.be/cSZvq7Kv6_0)
+
+- PostgreSQL
+    - 
 - User Accounts
     - [General User Account structure](https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/)
