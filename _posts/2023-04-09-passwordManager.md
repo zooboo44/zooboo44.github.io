@@ -53,6 +53,22 @@ sudo /usr/pgadmin4/bin/setup-web.sh\
     - Under 'General', give your server a name (I used postgresql-local).
     - Under 'Connection', supply a host (127.0.0.1), port (5432), and username (postgres)
 
+
+## Configure PostgreSQL to allow remote connection
+- Allow other IPs to connect to SQL Server
+```
+vim /etc/postgresql/15/main/postgresql.conf
+```
+- Replace ```listen_addresses = 'localhost'``` with ```listen_addresses = '*'```
+- Open ```pg_hba.conf``` and add the following entry
+```
+host    all             all              0.0.0.0/0                       md5
+host    all             all              ::/0                            md5
+```
+- Restart postgresql server ```sudo systemctl restart postgresql.service```
+
+
+
 ## Connector
 - Download ```libpq``` library
 
@@ -79,7 +95,12 @@ tar xvfz libpqxx-4.0.tar.gz
 - Configure
 ```
 cd libpqxx-4.0
-./configure
+./configure --enable-static
+```
+
+- Make
+```
+make && make install
 ```
 
 # Progress/What I've learned
