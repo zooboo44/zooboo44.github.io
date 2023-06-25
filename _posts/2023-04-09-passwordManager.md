@@ -79,25 +79,19 @@ yay -S postgresql-libs
 Ubuntu
 sudo apt install libpq-dev
 ```
-
-
 - Download ```libpqxx``` library
 ```
 wget https://github.com/jtv/libpqxx/archive/refs/tags/7.7.5.tar.gz
 ```
-
-
 - Extract
 ```
 tar xvfz libpqxx-4.0.tar.gz
 ```
-
 - Configure
 ```
 cd libpqxx-4.0
 ./configure --enable-static
 ```
-
 - Make
 ```
 make && make install
@@ -118,5 +112,6 @@ make && make install
 
 - PostgreSQL
     - [Install and configure Libpqxx](https://github.com/jtv/libpqxx/blob/master/BUILDING-configure.md)
+    - [Configure PostgreSQL to allow remote connection](https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection)
 - User Accounts
     - [General User Account structure](https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/)
