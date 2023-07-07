@@ -16,9 +16,10 @@ categories: Self-host
     - Explains step by step where to get gerber file, parts, and assembly
 - [Sofle Keyboard - sourcing parts](https://josefadamcik.github.io/SofleKeyboard/sourcing_parts.html)
 - [Case](https://www.printables.com/model/347524-corne-keyboard-case/files)
+- [Soldering battery](https://docs.nicekeyboards.com/#/nice!nano/getting_started)
 
 # Parts
-- [ ] [PCB](https://www.diykeyboards.com)
+- [X] [PCB](https://www.diykeyboards.com)
     - Purchasing PCB from a seller, purchasing through PCBWay or jlcpcb is too expensive due to shipping costs and minimum board ammount
 - [X] [OLED Display](https://www.amazon.com/gp/product/B079BN2J8V/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1)
 - [X] 2x [nice!nano](https://typeractive.xyz/products/nice-nano)
@@ -26,5 +27,15 @@ categories: Self-host
 - [X] [Kailh hotswap sockets for MX](https://www.amazon.com/gp/product/B0BVH6M5FP/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
 - [X] [Flux](https://www.amazon.com/gp/product/B07B53LNGX/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1)
 - [X] [Tweezers](https://www.amazon.com/gp/product/B00JS42110/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1)
-- [ ] [Keys]()
-- [ ] [Battery]()
+- [X] [Keys](https://www.amazon.com/dp/B07X3VLF89?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+- [X] [Battery](https://www.amazon.com/dp/B09WK8Y183?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+- [X] [Key Caps](https://www.amazon.com/gp/product/B06VWBV3Q7/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
+
+# Roadblocks
+- Ripped a pad off of a PCB, had to buy a new set
+- Soldered the Nice! Nano headers on the wrong side, had to painstakingly de-solder and re-solder headers on correct side
+- PCB I purchased didn't come with a battery header or pads for a switch. My plan right now is to direcly solder battery to the Nice! Nano and inline a small power switch
+- I wasn't able to find the correct headers or pins for the Nice! Nano so it sits higher that it's supposed to, as a result, the usb-c port is blocked by the top part of the case, I had to cut the case in order to expose the usb-c port
+
+# What I Learned
+- Overall it was an interesting project, I'm still debating on if I want to make a keyboard again from scratch or not. It was tedious at times but I learned a lot and had fun making it. It was definitly an interesting experience. Now that I've done it once, I think if i do it again it will be a lot easier. Once I learn this 42-key layout i want to try to downsize to a 36-key layout but thats way in the future. Still need to make some modifications to the layout as I use it more.
