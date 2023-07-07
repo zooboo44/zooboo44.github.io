@@ -23,14 +23,11 @@ categories: Programming
     - logging (client IPs, actions, false attempts, etc.)
 
 # Timeline/What I've learned
-- [X] 6/16/2023
-    Create a client and server programs that can communicate with each other
+- [X] ```6/16/2023``` Create a client and server programs that can communicate with each other
     - Manually created a server and client program that communicated through sockets
-- [X] 6/30/2023
-    Connected a test server program to a Postgres database
+- [X] ```6/30/2023``` Connected a test server program to a Postgres database
     - Still need to learn how to properly parse data from the database, insert, remove, modify, etc. So far I just have a solid connection to the database in which I can perform queries
-- 7/7/2023
-    After thinking about how the client is going to envoke different functions on the server side, I started looking into creating an API for the server. So far I have kind of settled on gRPC that enhances the functionality of ProtoBuf (from my understanding) I still need to do a lot more digging but I'm going to explore this path and see if it's a right fit for this project
+- ```7/7/2023``` After thinking about how the client is going to envoke different functions on the server side, I started looking into creating an API for the server. So far I have kind of settled on gRPC that enhances the functionality of ProtoBuf (from my understanding) I still need to do a lot more digging but I'm going to explore this path and see if it's a right fit for this project
 
 # Roadblocks
 
