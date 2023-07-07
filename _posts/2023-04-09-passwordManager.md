@@ -5,6 +5,12 @@ categories: Programming
 
 # Background
 - I want to create a server/clientpassword manager that is built in C++ and will use a SQL Database that will store encrypted secrets
+- Goal
+    - Create a password manager from scratch in C++ to learn how to use sockets
+    - Connect to a database
+    - Utilize makefiles
+    - Create a docker image
+    - Encrypt/decrypt user input
 - Features
     - Server/Client Architecture
     - Password Protected Access
@@ -15,22 +21,35 @@ categories: Programming
     - Multithread to handle socket connections
     - SSL
     - logging (client IPs, actions, false attempts, etc.)
-- Goal
-    - Create a password manager from scratch in C++ to learn how to use sockets
-    - Connect to a database
-    - Utilize makefiles
-    - Create a docker image
-    - Encrypt/decrypt user input
 
-# Timeline
-- [ ] Create a client and server programs that can communicate with each other
-- [ ] Parse json data to setup environment on start
-- [ ] Multithread server connections
-- [ ] Connect the server to a database
-- [ ] Structure how the database is going to be setup to hold the usernames and passwords
-- [ ] Be able to retrieve the usernames and passwords
-- [ ] Encrypt passwords that are stored in the database
+# Timeline/What I've learned
+- [X] 6/16/2023
+    Create a client and server programs that can communicate with each other
+    - Manually created a server and client program that communicated through sockets
+- [X] 6/30/2023
+    Connected a test server program to a Postgres database
+    - Still need to learn how to properly parse data from the database, insert, remove, modify, etc. So far I just have a solid connection to the database in which I can perform queries
+- 7/7/2023
+    After thinking about how the client is going to envoke different functions on the server side, I started looking into creating an API for the server. So far I have kind of settled on gRPC that enhances the functionality of ProtoBuf (from my understanding) I still need to do a lot more digging but I'm going to explore this path and see if it's a right fit for this project
 
+# Roadblocks
+
+# Resources
+- Sockets
+    - [Creating a TCP Server in C++ [Linux / Code Blocks]](https://youtu.be/cNdlrbZSkyQ)
+    - [Unix Socket](https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm)
+    - [Sockets tutorial](https://www.linuxhowtos.org/C_C++/socket.htm)
+    - [Group chat application](https://youtu.be/KEiur5aZnIM)
+
+- PostgreSQL
+    - [Install and configure Libpqxx](https://github.com/jtv/libpqxx/blob/master/BUILDING-configure.md)
+    - [Configure PostgreSQL to allow remote connection](https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection)
+- User Accounts
+    - [General User Account structure](https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/)
+
+
+
+# PUT IN REPOSITORY README
 # PostgreSQL
 ## Server Installation
 ```
@@ -96,22 +115,3 @@ cd libpqxx-4.0
 ```
 make && make install
 ```
-
-# Progress/What I've learned
-- Learned about sockets and how servers and clients connect to each other
-
-
-# Roadblocks
-
-# Resources
-- Sockets
-    - [Creating a TCP Server in C++ [Linux / Code Blocks]](https://youtu.be/cNdlrbZSkyQ)
-    - [Unix Socket](https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm)
-    - [Sockets tutorial](https://www.linuxhowtos.org/C_C++/socket.htm)
-    - [Group chat application](https://youtu.be/KEiur5aZnIM)
-
-- PostgreSQL
-    - [Install and configure Libpqxx](https://github.com/jtv/libpqxx/blob/master/BUILDING-configure.md)
-    - [Configure PostgreSQL to allow remote connection](https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection)
-- User Accounts
-    - [General User Account structure](https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/)
