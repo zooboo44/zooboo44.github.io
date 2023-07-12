@@ -59,6 +59,7 @@ categories: Self-host
     - [Low Level Learning Debugging with OpenOCD](https://youtu.be/_1u7IOnivnM)
     - [Flashing STM32 with ST-Link](https://youtu.be/1cleO3mHjWw)
     - [ST-Link Flashing windows](https://youtu.be/NAWpqNjOGlc)
+    - [Removing Flash Protection](https://blog.dbrgn.ch/2020/5/16/nrf52-unprotect-flash-jlink-openocd/)
 
 # What I Learned
 - Overall it was an interesting project, I'm still debating on if I want to make a keyboard again from scratch or not. It was tedious at times but I learned a lot and had fun making it. It was definitly an interesting experience. Now that I've done it once, I think if i do it again it will be a lot easier. Once I learn this 42-key layout i want to try to downsize to a 36-key layout but thats way in the future. Still need to make some modifications to the layout as I use it more.
