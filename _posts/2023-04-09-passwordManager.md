@@ -45,8 +45,8 @@ categories: Programming
     - [General User Account structure](https://robertheaton.com/2019/08/12/programming-projects-for-advanced-beginners-user-logins/)
 - gRPC
     - [Protocol Buffers Crash Course (Youtube)](https://youtu.be/46O73On0gyI)
-    - [Using Protocol Buffers in C++](https://youtu.be/7wWjJ2eYixk)
-    - [Getting Started with gRPC (github)] (https://github.com/grpc/grpc/tree/master/src/cpp)
+    - [Using Protocol Buffers in C++ (Youtube)](https://youtu.be/7wWjJ2eYixk)
+    - [Getting Started with gRPC (github)](https://github.com/grpc/grpc/tree/master/src/cpp)
         - How to build from source
     - [gRPC Basics (gRPC.io)](https://grpc.io/docs/languages/cpp/basics/)
 
