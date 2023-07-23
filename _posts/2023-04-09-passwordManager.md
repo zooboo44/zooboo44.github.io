@@ -28,6 +28,8 @@ categories: Programming
 - [X] ```6/30/2023``` Connected a test server program to a Postgres database
     - Still need to learn how to properly parse data from the database, insert, remove, modify, etc. So far I just have a solid connection to the database in which I can perform queries
 - ```7/7/2023``` After thinking about how the client is going to envoke different functions on the server side, I started looking into creating an API for the server. So far I have kind of settled on gRPC that enhances the functionality of ProtoBuf (from my understanding) I still need to do a lot more digging but I'm going to explore this path and see if it's a right fit for this project
+- ```7/15/2023``` Installed gRPC and successfully built the examples and was able to run them properly
+- ```7/22/2023``` Start reading and understanding the gRPC documentation. The [Introduction to gRPC](https://grpc.io/docs/what-is-grpc/introduction/), [Core Concepts](https://grpc.io/docs/what-is-grpc/core-concepts/), and the language specific [Basics tutorial](https://grpc.io/docs/languages/cpp/basics/)
 
 # Roadblocks
 
@@ -48,6 +50,8 @@ categories: Programming
     - [Using Protocol Buffers in C++ (Youtube)](https://youtu.be/7wWjJ2eYixk)
     - [Getting Started with gRPC (github)](https://github.com/grpc/grpc/tree/master/src/cpp)
         - How to build from source
+    - [Introduction to gRPC](https://grpc.io/docs/what-is-grpc/introduction/)
+    - [C++ Basics tutorial](https://grpc.io/docs/languages/cpp/basics/)
     - [gRPC Basics (gRPC.io)](https://grpc.io/docs/languages/cpp/basics/)
 
 
