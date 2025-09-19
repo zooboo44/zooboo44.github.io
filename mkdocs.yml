@@ -77,3 +77,5 @@ nav:
   - Home: index.md
   - HomeLab:
     - HomeLab Layout: homelab/layout.md
+  - Linux:
+    - KVM: linux/kvm.md
