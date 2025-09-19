@@ -75,4 +75,5 @@ markdown_extensions:
  
 nav:
   - Home: index.md
-  - HomeLab Layout: homelab/layout.md
+  - HomeLab:
+    - HomeLab Layout: homelab/layout.md
