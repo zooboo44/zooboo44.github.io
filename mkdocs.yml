@@ -2,8 +2,6 @@ site_name: My HomeLab
 site_url: https://mydomain.org/mysite
 theme:
   name: material
-extra_javascript:
-  - javascripts/mermaid-icons.js
 theme:
   font:
       text: Quicksand
@@ -75,6 +73,7 @@ markdown_extensions:
  
 nav:
   - Home: index.md
+  - Up Next: upnext.md
   - HomeLab:
     - HomeLab Layout: homelab/layout.md
   - Linux:
